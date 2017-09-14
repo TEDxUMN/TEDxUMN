@@ -1,6 +1,4 @@
-# Website
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.2.
+# TEDxUMN Website
 
 ## Development server
 
@@ -22,6 +20,10 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 Before running the tests make sure you are serving the app via `ng serve`.
+
+## Deploying to Website
+
+Run `gulp deploy` to build and deploy /dist/ folder to the [Github pages repository](https://github.com/TEDxUMN/tedxumn.github.io). 
 
 ## Further help
 
