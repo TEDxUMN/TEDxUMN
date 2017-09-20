@@ -1,0 +1,18 @@
+.nav-bar {
+    background-color: #323232;
+    padding: 5px 20px;
+}
+
+.nav-bar .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 55px;
+    width: 50vw;
+}
+
+.nav-bar .nav-links a {
+    color: white;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+}

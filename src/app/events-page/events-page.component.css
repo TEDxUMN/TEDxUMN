@@ -1,0 +1,70 @@
+.events-cta {
+    color: black;
+    background-color: gray;
+    padding: 10vh 0;
+    background-image: url('/assets/theme.png');
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+    background-size: 110%;
+}
+
+.events-cta .btn-primary {
+    color: black;
+    border-color: black;
+}
+
+.events-cta .btn-primary:hover {
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+
+.events-cta h1 {
+    font-size: 10vw;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+
+.events-cta p {
+    margin: 0 0 30px;
+    font-weight: lighter;
+}
+
+.speakers {
+    padding: 50px;
+}
+
+.speakers h2 {
+    color: gray;
+    font-weight: 200;
+    padding: 5px 0 15px;
+}
+
+.speakers-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.speaker {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    position: relative;
+    margin: 5px;
+}
+
+.speaker img {
+    width: 150px;
+    height: 150px;
+}
+
+.speaker h3 {
+    text-align: left;
+    position: absolute;
+    left: 5px;
+    bottom: -5px;
+    color: white;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+}

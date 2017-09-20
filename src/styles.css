@@ -1,3 +1,15 @@
 body {
-    /* background-color: black; */
+    background-color: black;
+}
+
+.btn-primary {
+    /* color: transparent; */
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 0;
+}
+
+.btn-primary:hover {
+    color: black;
+    background-color: white;
 }

@@ -1,0 +1,67 @@
+.involvement {
+    color: white;
+}
+
+.involvement .square {
+    height: 50vw;
+    padding: 30px;
+    position: relative;
+} 
+
+.involvement .square h2 {
+    font-size: 4rem;
+    font-weight: lighter;
+}
+
+.involvement .square hr {
+    width: 40vw;
+    border: none;
+    height: 1px;
+
+    /* Set the hr color */
+    color: red; /* old IE */
+    background-color: red; /* Modern Browsers */
+}
+
+.involvement .square left {
+    text-align:left;
+    margin-left:0;
+}
+
+.involvement .square right {
+    text-align:right;
+    margin-right: 0;
+}
+
+.involvement .square h3 {
+    color: red;
+    font-weight: lighter;
+}
+
+.involvement .square-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.involvement .square-btn button {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.involvement .square-btn button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid white;
+}
+
+.team {
+    background-image: url('http://media.istockphoto.com/photos/go-team-picture-id587506954');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.speaker {
+    background-image: url('http://static.rogerebert.com/redactor_assets/pictures/56c78c7196d833f6c900000d/shonda-rhimes-at-ted2016.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}

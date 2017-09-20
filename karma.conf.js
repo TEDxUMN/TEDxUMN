@@ -19,6 +19,9 @@ module.exports = function (config) {
       reports: [ 'html', 'lcovonly' ],
       fixWebpackSourcePaths: true
     },
+    proxies: {
+      '/assets': '/src/assets/'
+    },
     angularCli: {
       environment: 'dev'
     },

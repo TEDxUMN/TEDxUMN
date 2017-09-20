@@ -1,0 +1,64 @@
+.partnership {
+    color: white;
+    background-image: url('https://static.pexels.com/photos/392018/pexels-photo-392018.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 10vh 0;
+}
+.partnership .center-large {
+   padding: 5vh 0 2vh 0;
+}
+
+.partnership .center-large h1 {
+    text-transform: uppercase;
+    font-size: 5vw;
+    font-weight: normal;
+    border: 3px solid white;
+    width: 50vw;
+    margin: auto;
+    padding: 20px;
+}
+
+.partnership hr {
+    width: 40vw;
+    border: none;
+    height: 1px;
+
+    /* Set the hr color */
+    color: red; /* old IE */
+    background-color: red; /* Modern Browsers */
+}
+
+.partnership p {
+    margin: 7px auto 20px;
+    width: 50vw;
+}
+
+.partnership h3 {
+    color: red;
+    font-weight: lighter;
+}
+
+.sponsors h2 {
+    color: gray;
+    font-weight: 200;
+    padding: 35px 0 15px;
+}
+
+.sponsors hr {
+    width: 10vw;
+    border: none;
+    height: 1px;
+
+    /* Set the hr color */
+    color: gray; /* old IE */
+    background-color: gray; /* Modern Browsers */
+}
+
+.sponsors .sponsors-list {
+    padding: 10px;
+}
+
+.sponsors .sponsors-list .sponsor-item {
+    padding: 10px;
+}

@@ -7,7 +7,6 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
-import { CtaComponent } from './cta/cta.component';
 import { SpeakersBarComponent } from './speakers-bar/speakers-bar.component';
 import { EventLineupComponent } from './event-lineup/event-lineup.component';
 import { SponsersComponent } from './sponsers/sponsers.component';
@@ -21,7 +20,6 @@ import { InvolvedPageComponent } from './involved-page/involved-page.component';
     AppComponent,
     NavBarComponent,
     FooterComponent,
-    CtaComponent,
     SpeakersBarComponent,
     EventLineupComponent,
     SponsersComponent,

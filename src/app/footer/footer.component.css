@@ -1,0 +1,10 @@
+.footer {
+    padding: 50px;
+    color: #ccc;
+}
+
+.footer a, .footer a:hover  {
+    font-weight: lighter;
+    display: block;
+    color: #ccc;
+}

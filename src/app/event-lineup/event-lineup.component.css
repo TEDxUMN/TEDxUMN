@@ -1,0 +1,35 @@
+.event-lineup {
+    padding: 30px;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.event-dark {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.speaker-entry h5 {
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.speaker-entry small {
+    font-weight: lighter;
+    font-size: 12px;
+}
+
+.speaker-entry h5:hover {
+    font-weight: bold;
+}
+
+.speaker-entry p {
+    color: white;
+    text-align: right;
+}
+
+.speaker-entry a:hover {
+    color: transparent;
+}
