@@ -3,7 +3,7 @@ var exec = require('child_process').exec;
 var ghPages = require('gulp-gh-pages');
 
 gulp.task('build', function (cb) {
-  exec('ng build', function (err, stdout, stderr) {
+  exec('ng build --prod', function (err, stdout, stderr) {
     console.log(stdout);
     console.log(stderr);
     cb(err);
