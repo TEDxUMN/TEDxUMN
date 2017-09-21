@@ -1,0 +1,32 @@
+.about {
+    color: white;
+    background-color: gray;
+    padding: 10vh 0;
+    background-image: url('https://c.pxhere.com/photos/47/a1/mountains_rivers_foggy_misty_darkness_water_flowing_calm-1342662.jpg!d');
+    background-position: top left;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.about .center-large {
+   padding: 5vh 0 2vh 0;
+}
+
+.about .center-large h1 {
+    text-transform: uppercase;
+    font-size: 15vw;
+    font-weight: lighter;
+}
+
+.about hr {
+    width: 40vw;
+    border: none;
+    height: 3px;
+
+    /* Set the hr color */
+    color: red; /* old IE */
+    background-color: red; /* Modern Browsers */
+}
+
+.about p {
+    margin: 7px 0 15px;
+}

@@ -4,6 +4,7 @@ import { HomeComponent } from '../home/home.component';
 import { EventsPageComponent } from '../events-page/events-page.component';
 import { InvolvedPageComponent } from '../involved-page/involved-page.component';
 import { PartnershipsPageComponent } from '../partnerships-page/partnerships-page.component';
+import { AboutPageComponent } from '../about-page/about-page.component';
 
 const routes: Routes = [
   {
@@ -16,12 +17,16 @@ const routes: Routes = [
   },
   {
     path: 'team',
-    component:InvolvedPageComponent,
+    component: InvolvedPageComponent,
   },
   {
     path: 'partnerships',
-    component:PartnershipsPageComponent,
+    component: PartnershipsPageComponent,
   },
+  {
+    path: 'about',
+    component: AboutPageComponent,
+  }
 ];
 
 @NgModule({

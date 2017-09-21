@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { EventsPageComponent } from './events-page/events-page.component';
 import { PartnershipsPageComponent } from './partnerships-page/partnerships-page.component';
 import { InvolvedPageComponent } from './involved-page/involved-page.component';
+import { AboutPageComponent } from './about-page/about-page.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { InvolvedPageComponent } from './involved-page/involved-page.component';
     HomeComponent,
     EventsPageComponent,
     PartnershipsPageComponent,
-    InvolvedPageComponent
+    InvolvedPageComponent,
+    AboutPageComponent
   ],
   imports: [
     BrowserModule,
