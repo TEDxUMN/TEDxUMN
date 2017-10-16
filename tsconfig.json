@@ -2,6 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
+    "module": "commonjs",
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
@@ -9,7 +10,10 @@
     "experimentalDecorators": true,
     "target": "es5",
     "typeRoots": [
-      "node_modules/@types"
+      "./node_modules/@types"
+    ],
+    "types" : [
+      "wordcloud"
     ],
     "lib": [
       "es2017",

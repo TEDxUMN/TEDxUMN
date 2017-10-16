@@ -15,6 +15,10 @@ import { EventsPageComponent } from './events-page/events-page.component';
 import { PartnershipsPageComponent } from './partnerships-page/partnerships-page.component';
 import { InvolvedPageComponent } from './involved-page/involved-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
+import { IdeasComponent } from './ideas/ideas.component';
+import { FormsModule } from '@angular/forms';
+import { WordCloudXComponent } from './word-cloud-x/word-cloud-x.component';
+import { ContentfulService } from './contentful.service';
 
 @NgModule({
   declarations: [
@@ -28,14 +32,17 @@ import { AboutPageComponent } from './about-page/about-page.component';
     EventsPageComponent,
     PartnershipsPageComponent,
     InvolvedPageComponent,
-    AboutPageComponent
+    AboutPageComponent,
+    IdeasComponent,
+    WordCloudXComponent
   ],
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [ContentfulService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -10,7 +10,9 @@
       "assets": [
         "assets",
         "favicon.ico",
-        "404.html"
+        "404.html",
+        { "glob": "**/*", "input": "../node_modules/wordcloud/src", "output": "./wordcloud/" },
+        { "glob": "**/*", "input": "../node_modules/systemjs/dist", "output": "./systemjs/" }
       ],
       "index": "index.html",
       "main": "main.ts",

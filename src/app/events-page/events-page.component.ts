@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ContentfulService } from '../contentful.service';
+import { Entry } from 'contentful';
 
 @Component({
   selector: 'app-events-page',
@@ -7,31 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventsPageComponent implements OnInit {
 
-  public speakers: any = [{
-    "name": "Ian Keller",
-    "image": "http://whysquare.co.nz/wp-content/uploads/2013/07/profile_square3-270x270.jpg"
-  },
-  {
-    "name": "Michelle Michaels",
-    "image": "http://www.sardiniauniqueproperties.com/wp-content/uploads/2015/10/Square-Profile-Pic-1-1.jpg"
-  },
-  {
-    "name": "Thomas Warner",
-    "image": "http://www.referralsaasquatch.com/assets/Outdoor-Square-Profile-Derek.jpg"
-  },
-  {
-    "name": "Jax Riddles",
-    "image": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAkbAAAAJDBjNjJiMTUxLTY3ODQtNDkxOS05MTMxLWU5Y2YwOGFjZjU2Nw.jpg"
-  },
-  {
-    "name": "Anna Miles",
-    "image": "https://media.creativemornings.com/uploads/user/avatar/58109/AmandaNienaberProfile-square.jpg"
-  }];
+  private events: Entry<any>[] = [];
 
-  constructor() { }
+  constructor(private contentfulService: ContentfulService) { }
 
   ngOnInit() {
-
+    this.contentfulService.getEvents()
+      .then(events => this.events = events)
   }
 
 }

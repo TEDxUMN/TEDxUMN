@@ -7,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutPageComponent implements OnInit {
 
+  public boardMembers: any = [{
+    "name": "Alex Kafer",
+    "image": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAbrAAAAJDFkYTUxM2QxLTJjNzMtNDFhNS04ZTMyLTE5NjIxYjk3MjA1Nw.jpg"
+  }];
+
+  public team: any = [{
+    "name": "Board",
+    "members": this.boardMembers
+  }];
+
   constructor() { }
 
   ngOnInit() {

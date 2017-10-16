@@ -1,20 +1,18 @@
-<div class="events-cta text-center">
-    <h1>THEME</h1>
-    <p>05 | 02 | 18</p>
+<div *ngIf="events[0]" class="events-cta text-center">
+    <h1>{{events[0].fields.eventName}}</h1>
+    <p>{{events[0].fields.eventDate}}</p>
     <button type="button" class="btn btn-primary">BUY TICKETS</button>
   
   </div>
   
-  <div class="speakers text-center">
+  <div *ngIf="events[0]" class="speakers text-center">
       <h2>SPEAKERS</h2>
       <div class="speakers-list">
-        <div class="speaker" *ngFor="let speaker of speakers">
-          <img src="{{ speaker.image }}" />
-          <h3>{{ speaker.name }}</h3>
+        <div class="speaker" *ngFor="let speaker of events[0].fields.speakers">
+          <img src="{{ speaker.fields.profileImage.fields.file.url }}" />
+          <h3>{{ speaker.fields.name }}</h3>
         </div>
       </div>
   </div>
 
-  <app-event-lineup [left]="true"></app-event-lineup>
-  <app-event-lineup></app-event-lineup>
-  <app-event-lineup [left]="true"></app-event-lineup>
+  <app-event-lineup *ngFor="let event of events; let even = even" [event]="event" [left]="even"></app-event-lineup>

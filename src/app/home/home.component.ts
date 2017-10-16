@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Entry } from 'contentful';
+import { ContentfulService } from '../contentful.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  private button: Entry<any>[] = [];
+
+  constructor(private contentfulService: ContentfulService) { }
 
   ngOnInit() {
+    this.contentfulService.getButtonText()
+    .then(button => this.button = button)
   }
 
 }

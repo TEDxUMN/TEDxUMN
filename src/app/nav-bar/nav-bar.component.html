@@ -4,9 +4,10 @@
     </a>
 
   <div class="nav-links float-right">
-      <a href="/events">Events</a>
-      <a href="/team">Get Involved</a>
-      <a href="/partnerships">Partnerships</a>
-      <button type="button" class="btn btn-primary">Buy Tickets</button>
+      <a class="link" href="/events">Events</a>
+      <a class="link" href="/team">Get Involved</a>
+      <a class="link" href="/partnerships">Partnerships</a>
+      <a *ngIf="button[0]" href="{{button[0].fields.url}}" class="btn btn-primary">{{ button[0].fields.title }}</a>
   </div>
 </div>
+ 
