@@ -8,32 +8,16 @@
   
   </div>
   
-  <div class="team-members text-center">
-      <h2>BOARD</h2>
-      <div class="speakers-list">
-        <div class="speaker" *ngFor="let speaker of speakers">
-          <img src="{{ speaker.image }}" />
-          <h3>{{ speaker.name }}</h3>
-        </div>
-      </div>
-  </div>
-
-  <div class="team-members text-center">
-      <h2>BOARD MEMBERS</h2>
-      <div class="speakers-list">
-        <div class="speaker" *ngFor="let speaker of speakers">
-          <img src="{{ speaker.image }}" />
-          <h3>{{ speaker.name }}</h3>
-        </div>
-      </div>
-  </div>
-
-  <div class="team-members text-center">
-      <h2>SOMETHING COMMITEE</h2>
-      <div class="speakers-list">
-        <div class="speaker" *ngFor="let speaker of speakers">
-          <img src="{{ speaker.image }}" />
-          <h3>{{ speaker.name }}</h3>
-        </div>
+  <div *ngIf="teamGroups">
+      <div *ngFor="let group of teamGroups" class="teamMembers text-center">
+          <h2 class="text-capitalize">{{group.fields.groupName}}</h2>
+          <hr />
+          <div class="teamMembers-list">
+            <div class="teamMember" *ngFor="let teamMember of group.fields.members">
+              <img src="{{ teamMember.fields.profilePicture.fields.file.url }}" />
+              <h3>{{ teamMember.fields.name }}</h3>
+              <!-- <span>{{ teamMember.fields.position }}</span> -->
+            </div>
+          </div>
       </div>
   </div>

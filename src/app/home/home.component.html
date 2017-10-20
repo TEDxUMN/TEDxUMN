@@ -3,7 +3,7 @@
     <h1>Welcome</h1>
   </div>
   <hr />
-  <p *ngIf="button[0]">{{ button[0].fields.ctaDescription }}</p>
+  <markdown [data]="button[0].fields.description"a *ngIf="button[0]"></markdown>
   <a *ngIf="button[0]" href="{{button[0].fields.url}}" class="btn btn-primary">{{ button[0].fields.title }}</a>
 
 </div>

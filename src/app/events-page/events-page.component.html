@@ -8,11 +8,17 @@
   <div *ngIf="events[0]" class="speakers text-center">
       <h2>SPEAKERS</h2>
       <div class="speakers-list">
-        <div class="speaker" *ngFor="let speaker of events[0].fields.speakers">
+        <div class="speaker" (click)="selectedSpeaker = speaker" *ngFor="let speaker of events[0].fields.speakers">
           <img src="{{ speaker.fields.profileImage.fields.file.url }}" />
           <h3>{{ speaker.fields.name }}</h3>
         </div>
       </div>
+      <div *ngIf="selectedSpeaker" class="selected-speaker">
+          <hr/>
+          <h1 class="speaker-name">{{selectedSpeaker.fields.name}}</h1>
+          <markdown [data]="selectedSpeaker.fields.biography"></markdown>
+      </div>
+      
   </div>
 
   <app-event-lineup *ngFor="let event of events; let even = even" [event]="event" [left]="even"></app-event-lineup>

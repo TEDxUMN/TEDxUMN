@@ -20,6 +20,8 @@ import { FormsModule } from '@angular/forms';
 import { WordCloudXComponent } from './word-cloud-x/word-cloud-x.component';
 import { ContentfulService } from './contentful.service';
 
+import { MarkdownModule } from 'angular2-markdown';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +42,8 @@ import { ContentfulService } from './contentful.service';
     BrowserModule,
     NgbModule.forRoot(),
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    MarkdownModule.forRoot()
   ],
   providers: [ContentfulService],
   bootstrap: [AppComponent]

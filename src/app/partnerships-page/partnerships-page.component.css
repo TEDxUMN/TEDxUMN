@@ -22,11 +22,11 @@
 .partnership hr {
     width: 40vw;
     border: none;
-    height: 1px;
+    height: 3px;
 
     /* Set the hr color */
-    color: red; /* old IE */
-    background-color: red; /* Modern Browsers */
+    color: #e62b1e; 
+    background-color: #e62b1e; 
 }
 
 .partnership p {
@@ -36,7 +36,7 @@
 
 .partnership h3 {
     color: red;
-    font-weight: lighter;
+    font-weight: normal;
 }
 
 .sponsors h2 {

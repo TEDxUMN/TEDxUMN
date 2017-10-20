@@ -14,7 +14,7 @@
 .home-cta .center-large h1 {
     text-transform: uppercase;
     font-size: 15vw;
-    font-weight: lighter;
+    font-weight: normal;
 }
 
 .home-cta hr {
@@ -29,4 +29,12 @@
 
 .home-cta p {
     margin: 7px 0 15px;
+}
+
+@media (min-width: 576px) { 
+    .home-cta .center-large h1 {
+        text-transform: uppercase;
+        font-size: 6rem;
+        font-weight: normal;
+    }
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ContentfulService } from '../contentful.service';
+import { Entry } from 'contentful';
 
 @Component({
   selector: 'app-about-page',
@@ -7,19 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutPageComponent implements OnInit {
 
-  public boardMembers: any = [{
-    "name": "Alex Kafer",
-    "image": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAbrAAAAJDFkYTUxM2QxLTJjNzMtNDFhNS04ZTMyLTE5NjIxYjk3MjA1Nw.jpg"
-  }];
+  private teamGroups: Entry<any>[] = [];
 
-  public team: any = [{
-    "name": "Board",
-    "members": this.boardMembers
-  }];
-
-  constructor() { }
+  constructor(private contentfulService: ContentfulService) { }
 
   ngOnInit() {
+    this.contentfulService.getTeam()
+    .then(team => this.teamGroups = team)
+    .then(console.log);
   }
 
 }

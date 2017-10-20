@@ -8,7 +8,8 @@ const CONFIG = {
   contentTypeIds: {
     speaker: 'speaker',
     event: 'event',
-    mainCTA: 'ticketLink'
+    mainCTA: 'ticketLink',
+    teamGroup: 'teamGroup'
   }
 }
 
@@ -25,6 +26,13 @@ export class ContentfulService {
   getEvents(query?: object): Promise<Entry<any>[]> {
     return this.cdaClient.getEntries(Object.assign({
       content_type: CONFIG.contentTypeIds.event
+    }, query))
+    .then(res => res.items);
+  }
+
+  getTeam(query?: object): Promise<Entry<any>[]> {
+    return this.cdaClient.getEntries(Object.assign({
+      content_type: CONFIG.contentTypeIds.teamGroup
     }, query))
     .then(res => res.items);
   }

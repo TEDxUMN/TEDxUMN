@@ -23,10 +23,60 @@
     height: 3px;
 
     /* Set the hr color */
-    color: red; /* old IE */
-    background-color: red; /* Modern Browsers */
+    color: #e62b1e; 
+    background-color: #e62b1e; 
 }
 
 .about p {
     margin: 7px 0 15px;
+}
+
+.teamMembers {
+    padding: 50px;
+}
+
+.teamMembers h2 {
+    color: gray;
+    font-weight: 300;
+    padding: 5px 0 15px;
+    letter-spacing: 3px;
+    font-size: 48px;
+}
+
+.teamMembers hr {
+    border-color: gray;
+    border-width: 2px;
+    width: 20%;
+}
+
+.teamMembers-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.teamMember {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    position: relative;
+    margin: 5px;
+}
+
+.teamMember img {
+    width: 150px;
+    height: 150px;
+}
+
+.teamMember h3 {
+    text-align: left;
+    position: absolute;
+    left: 5px;
+    bottom: -5px;
+    color: white;
+    text-shadow: -1px 0 #333,0 1px #333,1px 0 #333,0 -1px #333;
+}
+
+.teamMember span {
+    color: white;
 }

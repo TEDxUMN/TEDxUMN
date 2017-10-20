@@ -16,7 +16,6 @@ export class NavBarComponent implements OnInit {
   ngOnInit() {
     this.contentfulService.getButtonText()
     .then(button => this.button = button)
-    .then(console.log)
   }
 
 }
