@@ -1,10 +1,11 @@
 .event-lineup {
     padding: 30px;
-    background-color: rgba(128, 128, 128, 0.5);
+    background-color: rgba(128, 128, 128, 0.9);
+    margin-top: 50px;
 }
 
 .event-dark {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .speaker-entry h5 {

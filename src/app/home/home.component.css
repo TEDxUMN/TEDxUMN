@@ -1,14 +1,15 @@
 .home-cta {
     color: white;
     background-color: gray;
-    padding: 10vh 0;
-    background-image: url('https://c.pxhere.com/photos/47/a1/mountains_rivers_foggy_misty_darkness_water_flowing_calm-1342662.jpg!d');
+    padding: 15% 0;
+    background-image: url('/assets/Home_background.jpg');
     background-position: top left;
-    background-size: 100%;
+    background-size: cover;
+    /* /height: 100vh; */
     background-repeat: no-repeat;
 }
 .home-cta .center-large {
-   padding: 5vh 0 2vh 0;
+   padding: 5% 0 2% 0;
 }
 
 .home-cta .center-large h1 {

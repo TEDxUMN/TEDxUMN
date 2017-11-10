@@ -1,12 +1,16 @@
 .events-cta {
     color: black;
     background-color: gray;
-    padding: 10vh 0;
     background-image: url('/assets/theme.png');
     background-repeat: no-repeat;
     background-position: left top;
     background-attachment: fixed;
     background-size: 110%;
+    background-color: white;
+}
+
+.events-header {
+    padding: 10vh;
 }
 
 .events-cta .btn-primary {
@@ -33,6 +37,8 @@
 
 .speakers {
     padding: 50px;
+    width: 100%;
+    background: rgba(1, 1, 1, 0.9);
 }
 
 .speakers h2 {
@@ -45,6 +51,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    
 }
 
 .speaker {
@@ -76,6 +83,7 @@ hr {
 
 .selected-speaker {
     position: relative;
+    
 }
 
 .selected-speaker .speaker-name {
@@ -92,7 +100,8 @@ hr {
     text-align: left;
 }
 
-@media (max-width: 575px) { 
+/* @media (max-width: 575px) {  */
+@media only screen and (max-width : 470px) {
     hr {
         display: none;
     }
@@ -111,4 +120,26 @@ hr {
         text-align: left;
     }
 
+
+    .events-cta {
+        padding: 0;
+        background-attachment: inherit;
+        background-size: cover;
+        background-image: initial;
+    }
+
+    .events-header {
+        color: black;
+        padding: 5% 0;
+        background-image: url('/assets/theme.png');
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: cover;
+        background-color: white;
+    }
+
+    .speaker, .speaker img {
+        width: 80vw;
+        height: inherit;
+    }
 }

@@ -46,7 +46,7 @@
 }
 
 .involvement .square-btn button {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 .involvement .square-btn button:hover {
@@ -55,13 +55,44 @@
 }
 
 .team {
-    background-image: url('http://media.istockphoto.com/photos/go-team-picture-id587506954');
+    background-image: url('/assets/Get_JoinTeam.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .speaker {
-    background-image: url('http://static.rogerebert.com/redactor_assets/pictures/56c78c7196d833f6c900000d/shonda-rhimes-at-ted2016.jpg');
+    background-image: url('/assets/Rec_Speaker.JPG');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+}
+
+@media only screen and (max-width : 768px) {
+    .square h2 {
+        display: inline-block;
+        padding-right: 5px;
+    }
+
+    .involvement .square hr {
+        width: 90vw;
+    }
+
+    .involvement .square {
+        height: inherit;
+        padding: 30px;
+        position: relative;
+        text-align: left !important;
+    } 
+
+    .involvement .square hr {
+        text-align: left !important;
+        margin-left: 0;
+        margin-right: inherit !important;
+    } 
+
+    .involvement .square-btn {
+        height: 50vh;
+        padding: 30px;
+        position: relative;
+        order: -1;
+    } 
 }

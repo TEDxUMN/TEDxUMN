@@ -3,8 +3,6 @@
       <h1>PARTNER WITH US</h1>
     </div>
     <p>Our event would not be possible without the support of our amazing sponsors.</p>
-    <hr>
-    <h3>ABOUT OUR TEAM</h3>
 </div>
   
 
@@ -12,23 +10,11 @@
     <h2>THANK YOU</h2>
     <hr>
     <div class="container sponsors-list">
-        <div class="row">
-            <div class="sponsor-item col-md-4">
-              <a href="http://www.teslaworks.net">
-                <img src="http://www.teslaworks.net/assets/images/originals/logo_light.png" class="img-fluid">
+            <div *ngFor="let partner of partners" class="sponsor-item">
+              <a href="partner.fields.linkAddress">
+                <img src="{{partner.fields.logo.fields.file.url }}" class="img-fluid">
               </a>
             </div>
-            <div class="sponsor-item col-md-4">
-              <a href="http://www.teslaworks.net">
-                <img src="http://www.teslaworks.net/assets/images/originals/logo_light.png" class="img-fluid">
-              </a>
-            </div>
-            <div class="sponsor-item col-md-4">
-              <a href="http://www.teslaworks.net">
-                <img src="http://www.teslaworks.net/assets/images/originals/logo_light.png" class="img-fluid">
-              </a>
-            </div>
-          </div>
     </div>
    
 </div>
