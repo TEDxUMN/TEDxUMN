@@ -9,7 +9,7 @@ import { ContentfulService } from '../contentful.service';
 })
 export class NavBarComponent implements OnInit {
 
-  private button: Entry<any>[] = [];
+  public button: Entry<any>[] = [];
 
   constructor(private contentfulService: ContentfulService) { }
 

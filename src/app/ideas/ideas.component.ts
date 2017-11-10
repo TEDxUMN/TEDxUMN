@@ -8,9 +8,9 @@ import { Component, OnInit, ChangeDetectorRef, ChangeDetectionStrategy } from '@
 })
 export class IdeasComponent implements OnInit {
 
-  private topic : string;
-  private touched = false;
-  private rotationIndex = 0;
+  public topic : string;
+  public touched = false;
+  public rotationIndex = 0;
   
   public static topIssues = ["Human Trafficking", "Food Shortages", "Nuclear Energy"];
 
@@ -31,7 +31,7 @@ export class IdeasComponent implements OnInit {
     }, 3000);
   }
 
-  private takeFocus() {
+  public takeFocus() {
     this.touched = true;
     this.topic = "";
   }

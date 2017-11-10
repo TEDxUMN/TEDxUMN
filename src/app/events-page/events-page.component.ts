@@ -9,7 +9,7 @@ import { Entry } from 'contentful';
 })
 export class EventsPageComponent implements OnInit {
 
-  private events: Entry<any>[] = [];
+  public events: Entry<any>[] = [];
 
   constructor(private contentfulService: ContentfulService) { }
 

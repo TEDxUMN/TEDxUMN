@@ -9,7 +9,7 @@ import { Entry } from 'contentful';
 })
 export class AboutPageComponent implements OnInit {
 
-  private teamGroups: Entry<any>[] = [];
+  public teamGroups: Entry<any>[] = [];
 
   constructor(private contentfulService: ContentfulService) { }
 
