@@ -17,7 +17,6 @@ import { InvolvedPageComponent } from './involved-page/involved-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { IdeasComponent } from './ideas/ideas.component';
 import { FormsModule } from '@angular/forms';
-import { WordCloudXComponent } from './word-cloud-x/word-cloud-x.component';
 import { ContentfulService } from './contentful.service';
 
 import { MarkdownModule } from 'angular2-markdown';
@@ -35,8 +34,7 @@ import { MarkdownModule } from 'angular2-markdown';
     PartnershipsPageComponent,
     InvolvedPageComponent,
     AboutPageComponent,
-    IdeasComponent,
-    WordCloudXComponent
+    IdeasComponent
   ],
   imports: [
     BrowserModule,

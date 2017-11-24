@@ -1,13 +1,13 @@
 
 <div class="ideas">
     <div class="container outline center-block"> 
-        <img src="assets/ideas.png" alt="Ideas" height="200">
+        <img src="assets/ideas.png" alt="Ideas" height="100">
 
-        
-        <div class="talk-about">
-
-            <h1>Its time we talk about <input class="idea-text" type="text" (focus)="takeFocus()" [(ngModel)]="topic"/> .</h1>
+        <div class="talk-about text-center">
+            <h1>Its time we talk about <input class="idea-text" type="text" (focus)="takeFocus()" (ngModelChange)="addWordText($event)" [(ngModel)]="topic"/> .</h1>
+            <p >See what others have said <br/><i class="fa fa-caret-down" aria-hidden="true"></i></p>
             
+            <canvas class="word-cloud" id="x_canvas" height="600px" width="1100px"></canvas>
         </div>
     </div>
 </div>

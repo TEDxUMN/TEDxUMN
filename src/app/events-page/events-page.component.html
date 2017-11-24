@@ -1,12 +1,18 @@
 <div class="events-cta">
   <div *ngIf="events[0]" class="events-header text-center">
-    <h1>{{events[0].fields.eventName}}</h1>
-    <p>{{events[0].fields.eventDate}}</p>
-    <button type="button" class="btn btn-primary">BUY TICKETS</button>
+    <h1>Open Mic</h1>
+    <p>Thursday, January 25th
+      <br />
+      4-9pm | Coffman Memorial Union Theater
+    </p>
+    <a href="http://www.facebook.com/" class="btn btn-primary">View on Facebook</a>
   
   </div>
+  <div class="divider text-center">
+    <h2 style="color: white">Past Events</h2>
+  </div>
   
-  <div *ngIf="events[0]" class="speakers text-center">
+  <!-- <div *ngIf="events[0]" class="speakers text-center">
       <h2>SPEAKERS</h2>
       <div class="speakers-list">
         <div class="speaker" (click)="selectedSpeaker = speaker" *ngFor="let speaker of events[0].fields.speakers">
@@ -20,7 +26,7 @@
           <markdown [data]="selectedSpeaker.fields.biography"></markdown>
       </div>
       
-  </div>
+  </div> -->
 
   <app-event-lineup *ngFor="let event of events; let even = even" [event]="event" [left]="even"></app-event-lineup>
 </div>

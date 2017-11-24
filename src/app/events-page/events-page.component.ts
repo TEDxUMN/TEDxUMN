@@ -15,7 +15,15 @@ export class EventsPageComponent implements OnInit {
 
   ngOnInit() {
     this.contentfulService.getEvents()
+      .then(events => {console.log(events); return events})
+      .then(this.sort_by_date)
       .then(events => this.events = events)
+      .then(console.log)
   }
 
+  private sort_by_date(events) {
+    return events.sort(function(a, b) { 
+      return new Date(b.fields.eventDate).getTime() - new Date(a.fields.eventDate).getTime(); 
+    });
+  }
 }

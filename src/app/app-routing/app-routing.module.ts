@@ -6,17 +6,12 @@ import { InvolvedPageComponent } from '../involved-page/involved-page.component'
 import { PartnershipsPageComponent } from '../partnerships-page/partnerships-page.component';
 import { AboutPageComponent } from '../about-page/about-page.component';
 import { IdeasComponent } from '../ideas/ideas.component';
-import { WordCloudXComponent } from '../word-cloud-x/word-cloud-x.component';
 
 const routes: Routes = [
   {
       path: '',
       component: HomeComponent,
   },
-  {
-    path: 'test',
-    component: WordCloudXComponent,
-},
   {
     path: 'events',
     component: EventsPageComponent,
