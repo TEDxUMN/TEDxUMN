@@ -20,6 +20,7 @@ import { FormsModule } from '@angular/forms';
 import { ContentfulService } from './contentful.service';
 
 import { MarkdownModule } from 'angular2-markdown';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { MarkdownModule } from 'angular2-markdown';
     NgbModule.forRoot(),
     AppRoutingModule,
     FormsModule,
-    MarkdownModule.forRoot()
+    MarkdownModule.forRoot(),
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [ContentfulService],
   bootstrap: [AppComponent]
