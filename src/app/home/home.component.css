@@ -32,10 +32,10 @@
     margin: 7px 0 15px;
 }
 
-@media (min-width: 576px) { 
+@media (min-width: 768px) { 
     .home-cta .center-large h1 {
         text-transform: uppercase;
-        font-size: 6rem;
+        font-size: 8rem;
         font-weight: normal;
     }
 }
