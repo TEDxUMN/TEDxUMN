@@ -7,8 +7,15 @@
 
 .footer a, .footer a:hover  {
     font-weight: lighter;
-    display: block;
     color: #ccc;
+}
+
+.footer-links a, .footer-links a:hover  {
+    display: block;
+}
+
+.social a {
+    padding: 5px;
 }
 
 .footer .right {
