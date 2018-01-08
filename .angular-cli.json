@@ -11,6 +11,7 @@
         "assets",
         "favicon.ico",
         "404.html",
+        "CNAME",
         { "glob": "**/*", "input": "../node_modules/wordcloud/src", "output": "./wordcloud/" },
         { "glob": "**/*", "input": "../node_modules/systemjs/dist", "output": "./systemjs/" }
       ],
