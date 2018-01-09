@@ -29,7 +29,7 @@
     "contentful": "^4.6.4",
     "core-js": "^2.5.3",
     "es6-shim": "^0.35.3",
-    "firebase": "^4.8.1",
+    "firebase": "^4.8.0",
     "font-awesome": "^4.7.0",
     "reflect-metadata": "^0.1.10",
     "rxjs": "^5.5.6",
