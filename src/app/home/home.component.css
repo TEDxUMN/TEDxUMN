@@ -1,7 +1,7 @@
 .home-cta {
     color: white;
     background-color: gray;
-    padding: 15% 0;
+    padding: 5% 0 15%;
     background-image: url('/assets/Home_background.jpg');
     background-position: top left;
     background-size: cover;
