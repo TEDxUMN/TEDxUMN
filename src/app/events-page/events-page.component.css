@@ -1,21 +1,21 @@
 .events-cta {
-    color: black;
-    background-color: #f1f1f1;
-    background-image: url('/assets/microphone.png');
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-attachment: fixed;
-    background-size: 25%;
-    background-position-y: 45%;
+    color: white;
+    background-color: #f1f1f1;   
 }
 
 .events-header {
-    padding: 10vh;
+    position: relative;
 }
 
-.events-cta .btn-primary {
-    color: black;
-    border-color: black;
+.label {
+    color: white;    
+    position: absolute;
+    left: 8%;
+    top: 60%;
+}
+
+.label p {
+    line-height: 20%;
 }
 
 .events-cta .btn-primary:hover {
@@ -41,24 +41,31 @@
     background: rgba(1, 1, 1, 0.9);
 }
 
-.speakers {
-    padding: 50px;
+.speakers-header {
+    padding-top: 25px;
+    padding-bottom: 10px;
     width: 100%;
-    background: rgba(1, 1, 1, 0.9);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.speakers {
+    padding-bottom: 50px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
 }
 
 
 
 .speakers-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    
 }
 
 .speaker {
-    width: 150px;
-    height: 150px;
+    width: 15vw;
+    height: 200px;
     background-color: white;
     position: relative;
     margin: 5px;
@@ -67,21 +74,22 @@
 .speaker img {
     width: 150px;
     height: 150px;
+    padding-bottom: 5px;
 }
 
-.speaker h3 {
+/* .speaker h3 {
     text-align: left;
     position: absolute;
     left: 5px;
     bottom: -5px;
     color: white;
     text-shadow: -1px 0 #333,0 1px #333,1px 0 #333,0 -1px #333;
-}
+} */
 
-hr {
+/* hr {
     margin: 50px 0px;
     border-top: 1.5px solid white
-}
+} */
 
 .selected-speaker {
     position: relative;
@@ -89,16 +97,17 @@ hr {
 }
 
 .selected-speaker .speaker-name {
-    position: absolute;
+    /* position: absolute;
     top: -25px;
-    left: 30px;
-    background-color: black;
+    left: 30px; */
+    /* background-color: black;
     color: white;
-    padding: 0 20px;
+    padding: 0 20px; */
+    text-align: left;
 }
 
 .selected-speaker markdown {
-    color: white;
+    color: black;
     text-align: left;
 }
 
@@ -141,7 +150,6 @@ hr {
 
     .events-header {
         color: black;
-        padding: 5% 0;
         background-image: url('/assets/microphone.png');
         background-repeat: no-repeat;
         background-position: left top;
