@@ -55,8 +55,6 @@
     color: black;
 }
 
-
-
 .speakers-list {
     display: flex;
     justify-content: space-between;
@@ -77,32 +75,12 @@
     padding-bottom: 5px;
 }
 
-/* .speaker h3 {
-    text-align: left;
-    position: absolute;
-    left: 5px;
-    bottom: -5px;
-    color: white;
-    text-shadow: -1px 0 #333,0 1px #333,1px 0 #333,0 -1px #333;
-} */
-
-/* hr {
-    margin: 50px 0px;
-    border-top: 1.5px solid white
-} */
-
 .selected-speaker {
     position: relative;
     
 }
 
 .selected-speaker .speaker-name {
-    /* position: absolute;
-    top: -25px;
-    left: 30px; */
-    /* background-color: black;
-    color: white;
-    padding: 0 20px; */
     text-align: left;
 }
 
@@ -129,11 +107,6 @@
         padding: 20px 0;
         left: 0;
         top: 0;
-    }
-    
-    .selected-speaker markdown {
-        color: white;
-        text-align: left;
     }
 }
 
