@@ -24,6 +24,7 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
 
 import { MarkdownModule } from 'angular2-markdown';
 import { environment } from '../environments/environment';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { environment } from '../environments/environment';
     PartnershipsPageComponent,
     InvolvedPageComponent,
     AboutPageComponent,
-    IdeasComponent
+    IdeasComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,

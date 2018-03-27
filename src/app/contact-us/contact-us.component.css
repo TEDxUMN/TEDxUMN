@@ -1,0 +1,84 @@
+.partnership {
+    color: white;
+    background-image: url('/assets/Partner_Banner.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: left top;
+    padding: 10vh 0;
+}
+.partnership .center-large {
+   padding: 4% 0 2vh 0;
+}
+
+.partnership .center-large h1 {
+    text-transform: uppercase;
+    font-size: 5vw;
+    font-weight: normal;
+    border: 3px solid white;
+    width: 50vw;
+    margin: auto;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.partnership hr {
+    width: 40vw;
+    border: none;
+    height: 3px;
+
+    /* Set the hr color */
+    color: #e62b1e; 
+    background-color: #e62b1e; 
+}
+
+.partnership p {
+    margin: 7px auto;
+    width: 50vw;
+}
+
+.partnership h3 {
+    color: red;
+    font-weight: normal;
+}
+
+.sponsors {
+    background-color: white;
+    padding-bottom: 100px;
+}
+
+.sponsors h2 {
+    color: gray;
+    font-weight: 200;
+    padding: 35px 0 15px;
+}
+
+.sponsors hr {
+    width: 10vw;
+    border: none;
+    height: 1px;
+
+    /* Set the hr color */
+    color: gray; /* old IE */
+    background-color: gray; /* Modern Browsers */
+}
+
+.sponsors .sponsors-list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.sponsors .sponsors-list .sponsor-item {
+    padding: 10px;
+    width: 30vw;
+}
+
+/* @media (max-width: 575px) {  */
+@media only screen and (max-width : 768px) {
+    .partnership {
+        padding: 32px;
+        background-attachment: inherit;
+        background-size: cover;
+    }
+}
