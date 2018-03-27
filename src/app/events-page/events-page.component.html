@@ -4,14 +4,14 @@
       <span class="label">
           <p>Friday, March 30th</p>
           <p>5:30 PM – 10:00 PM | McNamara Alumni Center</p>
-          <a href="https://www.eventbrite.com/e/tedxumn-a-tale-of-twin-cities-tickets-39941907320" class="btn btn-primary">Buy Tickets</a>
+          <a href="https://www.eventbrite.com/e/tedxumn-a-tale-of-twin-cities-tickets-39941907320" class="btn btn-primary">Sold Out</a>
       </span>
   </div>
     <div class="speakers-header text-center ">
       <h2 style="color: black">Speakers</h2>
       <div *ngIf="events[0]" class="speakers text-center container">
         <div class="speakers-list">
-          <div class="speaker" (click)="selectedSpeaker = speaker" *ngFor="let speaker of events[0].fields.speakers">
+          <div class="speaker" (click)="selectSpeaker(speaker)" *ngFor="let speaker of events[0].fields.speakers">
             <img src="{{ speaker.fields.profileImage.fields.file.url }}" />
             <p>{{ speaker.fields.name }}</p>
           </div>
@@ -21,13 +21,10 @@
             <hr>
 
             <h3 class="speaker-name">{{selectedSpeaker.fields.name}}</h3>
-            <markdown [data]="selectedSpeaker.fields.biography"></markdown>
+            <markdown #speakerDesc [data]="selectedSpeaker.fields.biography"></markdown>
         </div>  
     </div>
-    </div>
-    
-  
-
+  </div>
 
   <div class="divider text-center">
       <h2 style="color: white">Past Events</h2>

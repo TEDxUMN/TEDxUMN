@@ -62,16 +62,14 @@
 }
 
 .speaker {
-    width: 15vw;
-    height: 200px;
+    width: 10vw;
     background-color: white;
     position: relative;
     margin: 5px;
 }
 
 .speaker img {
-    width: 150px;
-    height: 150px;
+    width: 11vw;
     padding-bottom: 5px;
 }
 
@@ -90,7 +88,7 @@
 }
 
 /* @media (max-width: 575px) {  */
-@media only screen and (max-width : 470px) {
+@media only screen and (max-width : 575px) {
     .speaker, .speaker img {
         width: 80vw;
         height: inherit;

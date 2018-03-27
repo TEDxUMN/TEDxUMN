@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectorRef, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef, ChangeDetectionStrategy, ViewChild, ElementRef } from '@angular/core';
 import { ContentfulService } from '../contentful.service';
 import { Entry } from 'contentful';
 
@@ -10,20 +10,35 @@ import { Entry } from 'contentful';
 export class EventsPageComponent implements OnInit {
 
   public events: Entry<any>[] = [];
+  public selectedSpeaker: any;
+
+  @ViewChild('speakerDesc') SpeakerDesc: ElementRef;
 
   constructor(private contentfulService: ContentfulService) { }
 
   ngOnInit() {
     this.contentfulService.getEvents()
-      .then(events => {console.log(events); return events})
+      .then(events => {
+          console.log(events);
+          return events;
+      })
       .then(this.sort_by_date)
       .then(events => this.events = events)
-      .then(console.log)
+      .then(console.log);
   }
 
   private sort_by_date(events) {
-    return events.sort(function(a, b) { 
+    return events.sort(function(a, b) {
       return new Date(b.fields.eventDate).getTime() - new Date(a.fields.eventDate).getTime(); 
     });
+  }
+
+  public selectSpeaker(speaker) {
+    this.selectedSpeaker = speaker;
+    this.scrollToDescription();
+  }
+
+  public scrollToDescription() {
+    this.SpeakerDesc.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }
