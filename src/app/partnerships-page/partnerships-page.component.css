@@ -42,6 +42,11 @@
     font-weight: normal;
 }
 
+.sponsors {
+    background-color: white;
+    padding-bottom: 100px;
+}
+
 .sponsors h2 {
     color: gray;
     font-weight: 200;
