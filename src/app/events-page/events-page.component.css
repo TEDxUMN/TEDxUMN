@@ -62,14 +62,14 @@
 }
 
 .speaker {
-    width: 10vw;
+    width: 250px;
     background-color: white;
     position: relative;
-    margin: 5px;
+    margin: auto;
 }
 
 .speaker img {
-    width: 11vw;
+    width: 100%;
     padding-bottom: 5px;
 }
 
@@ -97,21 +97,10 @@
     hr {
         display: none;
     }
-
-    .selected-speaker .speaker-name {
-        position: relative;
-        background-color: transparent;
-        color: white;
-        padding: 20px 0;
-        left: 0;
-        top: 0;
-    }
 }
 
 @media only screen and (max-width : 768px) {
     
-
-
     .events-cta {
         padding: 0;
         background-attachment: inherit;

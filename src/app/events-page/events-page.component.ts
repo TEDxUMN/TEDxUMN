@@ -34,11 +34,10 @@ export class EventsPageComponent implements OnInit {
   }
 
   public selectSpeaker(speaker) {
-    this.selectedSpeaker = speaker;
-    this.scrollToDescription();
-  }
-
-  public scrollToDescription() {
-    this.SpeakerDesc.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (speaker !== this.selectedSpeaker) {
+      this.selectedSpeaker = speaker;
+    } else {
+      this.selectedSpeaker = null;
+    }
   }
 }

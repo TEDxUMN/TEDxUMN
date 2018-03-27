@@ -11,18 +11,18 @@
       <h2 style="color: black">Speakers</h2>
       <div *ngIf="events[0]" class="speakers text-center container">
         <div class="speakers-list">
-          <div class="speaker" (click)="selectSpeaker(speaker)" *ngFor="let speaker of events[0].fields.speakers">
-            <img src="{{ speaker.fields.profileImage.fields.file.url }}" />
-            <p>{{ speaker.fields.name }}</p>
+          <div  *ngFor="let speaker of events[0].fields.speakers">
+              <div class="speaker" (click)="selectSpeaker(speaker)">
+                  <img src="{{ speaker.fields.profileImage.fields.file.url }}" />
+                  <p>{{ speaker.fields.name }}</p>
+                </div>
+                <div *ngIf="selectedSpeaker && selectedSpeaker == speaker" class="selected-speaker container">
+                    <h3 class="speaker-name">{{selectedSpeaker.fields.name}}</h3>
+                    <markdown [data]="selectedSpeaker.fields.biography"></markdown>
+                </div> 
           </div>
         </div>
-        <div *ngIf="selectedSpeaker" class="selected-speaker container">
-            <br />
-            <hr>
-
-            <h3 class="speaker-name">{{selectedSpeaker.fields.name}}</h3>
-            <markdown #speakerDesc [data]="selectedSpeaker.fields.biography"></markdown>
-        </div>  
+         
     </div>
   </div>
 
