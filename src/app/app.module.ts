@@ -15,12 +15,8 @@ import { EventsPageComponent } from './events-page/events-page.component';
 import { PartnershipsPageComponent } from './partnerships-page/partnerships-page.component';
 import { InvolvedPageComponent } from './involved-page/involved-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
-import { IdeasComponent } from './ideas/ideas.component';
 import { FormsModule } from '@angular/forms';
 import { ContentfulService } from './contentful.service';
-
-import { AngularFireModule } from 'angularfire2';
-import { AngularFirestoreModule } from 'angularfire2/firestore';
 
 import { MarkdownModule } from 'angular2-markdown';
 import { environment } from '../environments/environment';
@@ -39,7 +35,6 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     PartnershipsPageComponent,
     InvolvedPageComponent,
     AboutPageComponent,
-    IdeasComponent,
     ContactUsComponent
   ],
   imports: [
