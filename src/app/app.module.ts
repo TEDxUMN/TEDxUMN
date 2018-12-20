@@ -47,9 +47,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     NgbModule.forRoot(),
     AppRoutingModule,
     FormsModule,
-    MarkdownModule.forRoot(),
-    AngularFireModule.initializeApp(environment.firebase, 'TEDxUMN-web'),
-    AngularFirestoreModule
+    MarkdownModule.forRoot()
   ],
   providers: [ContentfulService],
   bootstrap: [AppComponent]
