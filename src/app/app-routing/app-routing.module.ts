@@ -5,7 +5,6 @@ import { EventsPageComponent } from '../events-page/events-page.component';
 import { InvolvedPageComponent } from '../involved-page/involved-page.component';
 import { PartnershipsPageComponent } from '../partnerships-page/partnerships-page.component';
 import { AboutPageComponent } from '../about-page/about-page.component';
-import { IdeasComponent } from '../ideas/ideas.component';
 import { ContactUsComponent } from '../contact-us/contact-us.component';
 
 const routes: Routes = [
@@ -16,10 +15,6 @@ const routes: Routes = [
   {
     path: 'events',
     component: EventsPageComponent,
-  },
-  {
-    path: 'ideas',
-    component: IdeasComponent,
   },
   {
     path: 'team',
