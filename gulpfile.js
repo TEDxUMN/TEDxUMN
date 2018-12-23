@@ -14,6 +14,6 @@ gulp.task('deploy', ['build'], function() {
     return gulp.src('./dist/**/*')
       .pipe(ghPages({
         'branch': 'master',
-        'remoteUrl': 'git@github.com:TEDxUMN/tedxumn.github.io.git'
+        'remoteUrl': 'https://github.com/TEDxUMN/tedxumn.github.io.git'
       }));
   });
