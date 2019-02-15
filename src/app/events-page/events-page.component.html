@@ -22,13 +22,12 @@
                 </div> 
           </div>
         </div>
-         
     </div>
   </div>
 
   <div class="divider text-center">
-      <h2 style="color: white">Past Events</h2>
-    </div>
+    <h2 style="color: white">Past Events</h2>
+  </div>
 
   <app-event-lineup *ngFor="let event of events | slice:1; let even = even" [event]="event" [left]="even"></app-event-lineup>
 </div>
