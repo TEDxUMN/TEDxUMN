@@ -30,7 +30,7 @@
 
 .involvement .square right {
     text-align:right;
-    margin-right: 0;
+    margin-right:0;
 }
 
 .involvement .square h3 {
@@ -64,6 +64,11 @@
     background-image: url('/assets/c.JPG');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.message {
+    padding-right:10%;
+    padding-left:10%
 }
 
 @media only screen and (max-width : 768px) {
