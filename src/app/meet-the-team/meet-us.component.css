@@ -1,0 +1,67 @@
+.container {
+    width:100%;
+    text-align:left;
+    display:flex;
+}
+
+.column{
+    float:left;
+    width:33.33%;
+    text-align:center;
+    color:#ffffff
+}
+
+img {
+    width:50%;
+    border-radius:50%;
+}
+
+.header {
+    color:white;
+    /*background-image: url('/assets/Partner_Banner.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: left top;
+    padding: 10vh 0;*/
+}
+.header .center-large {
+   padding: 4% 0 2vh 0;
+}
+
+.header .center-large h1 {
+    font-size: 5vw;
+    font-weight: normal;
+    /*border: 3px solid white;*/
+    width: 50vw;
+    margin: auto;
+    padding: 20px 0;
+    /*background-color: rgba(255, 255, 255, 0.2);*/
+}
+
+.header hr {
+    width: 40vw;
+    border: none;
+    height: 3px;
+
+    /* Set the hr color */
+    color: #e62b1e; 
+    background-color: #e62b1e; 
+}
+
+.header p {
+    margin: 7px auto;
+    width: 50vw;
+    font-weight:lighter;
+}
+
+.header h3 {
+    color: red;
+    font-size:25px;
+    font-weight:lighter;
+}
+
+.header h6 {
+    color:white;
+    font-style:italic;
+}

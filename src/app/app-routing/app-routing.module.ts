@@ -6,11 +6,16 @@ import { InvolvedPageComponent } from '../involved-page/involved-page.component'
 import { PartnershipsPageComponent } from '../partnerships-page/partnerships-page.component';
 import { AboutPageComponent } from '../about-page/about-page.component';
 import { ContactUsComponent } from '../contact-us/contact-us.component';
+import { MeetUsComponent } from '../meet-the-team/meet-us.component';
 
 const routes: Routes = [
+  { 
+    path: 'meetus',
+    component: MeetUsComponent,
+  },
   {
-      path: '',
-      component: HomeComponent,
+    path: '',
+    component: HomeComponent,
   },
   {
     path: 'events',

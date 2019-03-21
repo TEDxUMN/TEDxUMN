@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
-
+import { MeetUsComponent } from './meet-the-team/meet-us.component';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
@@ -35,7 +35,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     PartnershipsPageComponent,
     InvolvedPageComponent,
     AboutPageComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    MeetUsComponent
   ],
   imports: [
     BrowserModule,
