@@ -2,11 +2,15 @@
     width:100%;
     text-align:left;
     display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: start;
+
 }
 
 .column{
     float:left;
-    width:33.33%;
+    width:33%;
     text-align:center;
     color:#ffffff
 }
@@ -14,6 +18,12 @@
 img {
     width:50%;
     border-radius:50%;
+}
+
+@media only screen and (max-width:800px) {
+    .column {
+        width:50%;
+    }
 }
 
 .header {
@@ -55,10 +65,11 @@ img {
     font-weight:lighter;
 }
 
-.header h3 {
+.column h3 {
     color: red;
     font-size:25px;
     font-weight:lighter;
+    padding-top:20px;
 }
 
 .header h6 {
