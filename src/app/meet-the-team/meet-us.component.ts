@@ -9,6 +9,19 @@ import { ContentfulService } from '../contentful.service';
 })
 export class MeetUsComponent implements OnInit {
 
+  items = [
+    { position: "Chief People Officer",
+      name: "Spencer Krueger",
+      description: "I can give you a job!",
+      image: "/assets/useThis.jpg",
+    },
+    { position: "Director",
+      name: "Lucas Vaz",
+      description: "He can boss us around",
+      image: "/assets/useThis.jpg",
+    }
+  ]
+
   public button: Entry<any>[] = [];
 
   constructor(private contentfulService: ContentfulService) { }

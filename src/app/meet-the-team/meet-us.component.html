@@ -5,70 +5,12 @@
 </div>
     
 <div class="container">
-    <div class="column">
-        <img src="/assets/useThis.jpg" style="width:50%; height:50%;">
-        <h3>Spencer Krueger</h3>
-        <h6>Chief People Officer</h6>
-        <p>Description Here</p>
-    </div>
-    <div class="column">
-        <img src="/assets/useThis.jpg" style="width:50%; height:50%;">
-        <h3>Lucas Bagno</h3>
-        <h6>Director</h6>
-        <p>Description Here</p>
-    </div>
-    <div class="column">
-        <img src="/assets/useThis.jpg" style="width:50%; height:50%;">
-        <h3>Prajwal Vemireddy</h3>
-        <h6>Chief Technology Officer</h6>
-        <p>Description Here</p>
-    </div>
-    <div class="column">
-        <img src="/assets/useThis.jpg" style="width:50%; height:50%;">
-        <h3>Sasidhar Vankina</h3>
-        <h6>Attendee Experience</h6>
-        <p>Description Here</p>
-    </div>
-    <div class="column">
-        <img src="/assets/useThis.jpg" style="width:50%; height:50%;">
-        <h3>Anna McKenna</h3>
-        <h6>Chief Creative Officer</h6>
-        <p>Description Here</p>
-    </div>
-    <div class="column">
-        <img src="/assets/useThis.jpg" style="width:50%; height:50%;">
-        <h3>Lindsay Puls</h3>
-        <h6>Chief Curation Officer</h6>
-        <p>Description Here</p>
-    </div>
-    <div class="column">
-        <img src="/assets/useThis.jpg" style="width:50%; height:50%;">
-        <h3>Joanna Liu</h3>
-        <h6>Director of Event Management</h6>
-        <p>Description Here</p>
-    </div>
-    <div class="column">
-        <img src="/assets/useThis.jpg" style="width:50%; height:50%;">
-        <h3>Tharaniitharan Panchalingam</h3>
-        <h6>Chief Finance Officer</h6>
-        <p>Description Here</p>
-    </div>
-    <div class="column">
-        <img src="/assets/useThis.jpg" style="width:50%; height:50%;">
-        <h3>Mark Moran</h3>
-        <h6>Chief Marketing Officer</h6>
-        <p>Description Here</p>
-    </div>
-    <div class="column">
-        <img src="/assets/useThis.jpg" style="width:50%; height:50%;">
-        <h3>Adrian Houston</h3>
-        <h6>Chief People Officer</h6>
-        <p>Description Here</p>
-    </div>
-    <div class="column">
-        <img src="/assets/useThis.jpg" style="width:50%; height:50%;">
-        <h3>Layla Sethuraju</h3>
-        <h6>Co-Director</h6>
-        <p>Description Here</p>
+    <div *ngFor='let item of items'>
+        <div class="column">
+            <img src="{{item.image}}" style="width:50%; height:50%;">
+            <h3>{{item.name}}</h3>
+            <h6>{{item.position}}</h6>
+            <p>{{item.description}}</p>
+        </div>
     </div>
 </div>
