@@ -33,6 +33,7 @@
 .events-cta p {
     margin: 0 0 30px;
     font-weight: lighter;
+    font-size:25px;
 }
 
 .divider {
@@ -119,5 +120,23 @@
         background-color: #f1f1f1;
     }
 
-    
+    .events-cta p {
+        display:none;
+    }
+}
+
+@media (max-width: 870px){
+    .events-cta p {
+        font-size:20px;
+    }
+}
+
+@media (max-width:420px) {
+    .events-cta p {
+        font-size:10px;
+        padding-top:2px;
+        padding-bottom:0px;
+    }
+
+
 }
