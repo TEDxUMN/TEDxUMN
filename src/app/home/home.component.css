@@ -34,6 +34,10 @@
     background-color: red; /* Modern Browsers */
 }
 
+#tickets-button {
+    display:none;
+}
+
 .home-cta p {
     margin: 7px 0 15px;
 }
@@ -59,6 +63,10 @@
         padding-top:50px;
         padding-bottom:0;
         font-size:18px;
+    }
+
+    #tickets-button {
+        display:inline-block;
     }
 
     .home-cta .center-large h1 {
