@@ -3,14 +3,11 @@
         <h1>Meet The Team</h1>
     </div>
 </div>
-    
 <div class="container">
-    <div *ngFor='let item of items'>
-        <div class="column">
-            <img src="{{item.image}}" style="width:50%; height:50%;">
-            <h3>{{item.name}}</h3>
-            <h6>{{item.position}}</h6>
-            <p>{{item.description}}</p>
-        </div>
+    <div class="column" *ngFor='let item of items'>
+        <img src="{{item.image}}">
+        <h3>{{item.name}}</h3>
+        <h6>{{item.position}}</h6>
+        <p>{{item.description}}</p>
     </div>
 </div>
