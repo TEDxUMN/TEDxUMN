@@ -69,6 +69,9 @@
     position: relative;
     margin: auto;
 }
+.speaker:hover{
+    opacity:.3;
+}
 
 .speaker img {
     width: 100%;
