@@ -106,7 +106,7 @@ export class MeetUsComponent implements OnInit {
     { position: "",
       name: "Tharaniitharan Panchaliingam",
       description: "Sophomore studying Finance and Management Information Systems. International student that lives in Botswana" +
-      " passionate about sustainability and using natural resources to advance society ",
+      " passionate about sustainability and using natural resources to advance society.",
       image: "/assets/headshots/tharan.jpg",
     }
   ]
