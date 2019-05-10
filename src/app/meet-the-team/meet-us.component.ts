@@ -99,7 +99,7 @@ export class MeetUsComponent implements OnInit {
       image: "/assets/headshots/madeline.jpg",
     },
     { position: "Stage Design Team Member",
-    name: "Nhu",
+    name: "Nhu Lam",
     description: "Junior studying economics. Food and travel enthusiast.",
     image: "/assets/headshots/nhu.jpg",
     },
